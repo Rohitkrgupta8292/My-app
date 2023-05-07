@@ -1,0 +1,201 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+textarea{
+    width: 205px;
+    height: 100px;
+    border: 3px solid lightgrey;
+    border-radius: 10px;
+}
+
+.list-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    border: 2px solid lightgrey;
+    width: 400px;
+}
+
+.center-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: tomato;
+}
+
+.inbox{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.compose{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.sent{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.register{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.login{
+    background-color: black;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.reply{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.emails{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.header{
+  padding: 15px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-family: "Lucida Handwriting";
+  color:black;
+
+}
+
+.navbar{
+      padding: 15px;
+      text-align: left;
+      background: #1abc9c;
+      color: white;
+}
+
+.style{
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #FF8C00;
+    padding: 20px;
+    width: 400px;
+    margin-left: 10px;
+
+}
+
+.bgc{
+    background-color: green;
+}
+
+.foot{
+  text-align: center;
+  padding: 3px;
+  background-color:#1abc9c;
+  color: black;
+}
+
+.replied{
+    display: inline-block;
+    border-radius: 5px;
+    background-color:#FF8C00;
+    padding: 20px;
+    width: 400px;
+    margin-left: 10px;
+}
+
+.form{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  background-color: lightblue;
+
+}
+
+.text{
+    text-align: left;
+    margin-right: -15px;
+    margin-bottom: 10px;
+
+}
+
+.body{
+    margin-left: 15px;
+    text-align: center;
+}
+
+.forms{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: lightblue;
+
+}
+
+.button{
+    text-align: center;
+}
+
+.list{
+
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: left;
+        background-color: yellow;
+}
+
+
+.navbar-nav{
+    background-color:lavender;
+}
+
+
+
+
