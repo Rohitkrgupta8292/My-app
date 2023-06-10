@@ -44,9 +44,6 @@ def inbox():
     return render_template("inbox.html",emails=emails)
 
 
-if __name__ =="__main__":
-   app.run(debug=false,host='0.0.0.0')
-
 
 @app.route("/compose", methods=["GET", "POST"])
 @login_required
