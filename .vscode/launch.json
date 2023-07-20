@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/rohit kumar gupta/OneDrive/Documents/GitHub/My-app/mkdir project",
-      "program": "c:/Users/rohit kumar gupta/OneDrive/Documents/GitHub/My-app/mkdir project/build/Debug/outDebug",
+      "cwd": "c:/Users/rohit kumar gupta/OneDrive/Documents/GitHub/My-code/C++",
+      "program": "c:/Users/rohit kumar gupta/OneDrive/Documents/GitHub/My-code/C++/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
