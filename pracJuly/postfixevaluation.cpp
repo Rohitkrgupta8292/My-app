@@ -1,12 +1,11 @@
-// Prefix evaluation using stack operations..//
-//"- + 7 * 4 5 + 2 0"
+// postfix evaluation using stack..//
 #include <bits/stdc++.h>
 using namespace std;
 
-int prefixEvalutation(string s)
+int postfixEvaluation(string s)
 {
     stack<int> st;
-    for (int i = s.length() - 1; i >= 0; i--)
+    for (int i = 0; i < s.length(); i++)
     {
         if (s[i] >= '0' && s[i] <= '9')
         {
@@ -14,11 +13,10 @@ int prefixEvalutation(string s)
         }
         else
         {
-            int op1 = st.top();
-            st.pop();
             int op2 = st.top();
             st.pop();
-
+            int op1 = st.top();
+            st.pop();
             switch (s[i])
             {
             case '+':
@@ -34,7 +32,7 @@ int prefixEvalutation(string s)
                 st.push(op1 / op2);
                 break;
             case '^':
-                st.push(pow(op1,op2));
+                st.push(pow(op1, op2));
                 break;
             }
         }
@@ -44,7 +42,6 @@ int prefixEvalutation(string s)
 
 int main()
 {
-    string s = "-+7*45+20";
-    cout<<prefixEvalutation(s);
+    cout<<postfixEvaluation("46+2/5*7+");  //"46+2/5*7+"../
     return 0;
 }
