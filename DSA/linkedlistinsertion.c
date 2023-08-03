@@ -92,13 +92,13 @@ int main()
     printf("Elements in linked list before insertion:\n");
     linkedlistTraversal(head);
     //head = insertionAtFirst(head, 56);
-    //head = insertAtIndex(head, 56,1);
+    head = insertAtIndex(head, 56,3);
     //printf("Elements in linked list after insertion:\n");
     //printf("Elements in linked list after insertion in the middile:\n");
     //head =  insertAtEnd(head, 45);
-    head = insertAfterNode(third, head, 56);
+    //head = insertAfterNode(third, head, 56);
     ///rintf("Elements in linked list after insertion at the end:\n");
-    printf("Elements in linked list after insertion after the node:\n");
+    //printf("Elements in linked list after insertion after the node:\n");
     linkedlistTraversal(head);
     return 0;
 }
