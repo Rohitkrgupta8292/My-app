@@ -30,7 +30,7 @@ public:
     void enqueue(int x)
     {
         Node *n = new Node(x);
-        if (front == NULL)
+        if (front == NULL && back == NULL)
         {
             back = n;
             front = n;
@@ -38,10 +38,10 @@ public:
         }
         back->next = n;
         back = n;
-        if (front == NULL)
-        {
-            front = front->next;
-        }
+        // if (front == NULL)
+        // {
+        //     front = front->next;
+        // }
     }
 
     void dequeue()
