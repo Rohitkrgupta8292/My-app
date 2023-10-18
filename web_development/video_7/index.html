@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - lets learn it</title>
+</head>
+<body>
+    <h1>Form to apply for web development course</h1>
+    <form action="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="Username" placeholder="Enter your username" id="username">
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender"  id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to our newsletter?</label>
+        </div>
+        <div>
+            <label for="comment">Enter  your comment</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="5">
+            </textarea>
+        </div>
+        <div>
+            <select name="fruits" id="">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="grapes">Grapes</option>
+                <option value="guava">Guava</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
