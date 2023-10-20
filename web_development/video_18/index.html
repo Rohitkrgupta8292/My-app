@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+
+        .box2{
+          color: red;
+          padding: 10px;
+           margin: 25px;
+           border: solid black 2px;
+           height: 200px;
+           box-sizing: border-box;
+        }
+        .box1{
+           color: yellow;
+           padding: 10px;
+           margin: 25px;
+           border: solid blue 2px;
+           height: 200px;
+           box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am box
+    </div>
+    <div class="box box2">
+        I am another box
+    </div>
+</body>
+</html>
