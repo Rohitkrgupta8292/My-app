@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadoes and outline</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px #888888;
+            /* box-shadow: 5px 15px 5px 2px #048044; */
+
+        }
+        .text-shadow{
+            text-shadow: 2px 2px 6px rgba(151, 26, 26, 0.831);
+            outline: 2px solid black;
+            border: 5px solid blue;
+            box-shadow: 5px 5px 15px 5px #888888;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am box.
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor eligendi ad quos rerum quam maiores tempora perspiciatis porro a esse maxime, aliquam natus aspernatur, odio ea sunt voluptate architecto animi magnam deleniti minus alias!
+    </p>
+</body>
+</html>
