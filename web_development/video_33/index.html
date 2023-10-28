@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root{
+            --activecolor:#0dd3de; /*active page color*/
+            --hovercolor:#11111145; /*hover color*/
+            --color: white; /*text color*/
+            --back-color: #2158d7; /*baclground color*/
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--back-color);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: var(--color);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 18px 19px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color:var(--hovercolor)
+        }
+
+        .active {
+            background-color: var(--activecolor)
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+</body>
+
+</html>
