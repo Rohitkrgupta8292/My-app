@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            /* width: 100vw; */
+            background-color: #000000;
+            color: white;
+            padding: 35px;
+            text-align: center;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: pink;
+            height: 80px;
+            /* width: 100vw; */
+            /* position: sticky;
+            top: 0; */
+        }
+
+        .container {
+            background-color: green;
+            margin: 15px 30px;
+            width: 83vw;
+            /* height: 200px; */
+            padding: 45px 30px 45px 30px;
+            text-align: center;
+        }
+
+        .box1 {
+            background-color: palevioletred;
+            height: 40vh;
+            width: 30%;
+            display: inline-block;
+            margin: 0 300px 0 0;
+        }
+
+        .box2 {
+            background-color: blue;
+            height: 40vh;
+            width: 30%;
+            display: inline-block;
+        }
+
+        footer {
+            height: 100px;
+            background-color: bisque;
+        }
+
+        .text-box {
+            padding: 34px;
+            border: 2px solid white;
+            width: 50vw;
+            margin: 15px 20vw;
+            font-size: 2em;
+            border-radius: 13px;
+        }
+
+        .box {
+            height: 32px;
+            width: 32px;
+            background: orange;
+            position: fixed;
+            bottom: 65px;
+            border-radius: 24px;
+            right: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="text-box">
+            <p>Welcome to sigma web development express</p>
+        </div>
+        <div class="box"></div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
