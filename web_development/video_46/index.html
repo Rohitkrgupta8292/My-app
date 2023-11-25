@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            width: 50vw;
+            height: 80vh;
+            background-color: rgb(9,106,106);
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: name duration timing-function delay iteration-count fill_mode; */
+            animation-name: rohit_animation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.17, 0.61, 0.56, 0.91);
+            animation-delay: 1s;
+            /* animation-direction:reverse; */
+            animation-play-state: running;
+        }
+
+        @keyframes rohit_animation {
+            from{
+            }
+            to{
+                transform: translateX(300px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box</div>
+    </div>
+</body>
+</html>
