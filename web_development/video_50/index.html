@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        /* img{
+            filter: blur(5px);
+        } */
+
+        .img1{
+            filter: brightness(150%) contrast(0.5);
+        }
+
+        .img2{
+            filter: sepia(100%);
+        }
+
+        .img3{
+            filter: invert(0) opacity(0.5);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1"  width="450px" src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D" alt="image">
+
+        <img class="img2" width="450" src="https://cdn.siasat.com/wp-content/uploads/2023/01/shah-rukh-khan-pathaan-2-1-780x470.jpg" alt="SRK">
+        <img class="img3" width="450" src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/08/akshay-kumar-on-flops-ups-and-downs-happen-in-everyones-life-ians-interview-0001.jpg" alt="">
+    </div>
+</body>
+</html>
