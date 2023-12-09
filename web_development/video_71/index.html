@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Hey I am box</div>
+    </div>
+
+    <script>
+        // let div = document.createElement("div")
+        // div.innerHTML = "<b>I have been insert in container </b>"
+        // div.setAttribute("class", "created")
+        // document.querySelector(".container").append(div) 
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend", "<b> I am under the water </b>")
+    </script>
+</body>
+</html>
