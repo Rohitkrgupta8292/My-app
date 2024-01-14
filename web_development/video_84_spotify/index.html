@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-black ">
+            <div class="home bg-grey rounded">
+                <div class="logo">
+                    <img class="invert pointer" src="img/logo.svg" alt="spotify">
+                    <img class="invert close-bt" src="img/cancel.svg" alt="Close Button">
+                </div>
+                <ul>
+                    <li><img class="invert pointer" src="img/home.svg" alt="home"><span class="fw-1 pointer">Home</span>
+                    </li>
+                    <li><img class="invert pointer" src="img/search.svg" alt="search"><span
+                            class="fw-1v pointer">Search</span></li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="lib">
+                    <div class="li-t">
+                        <img width="24px" class="invert" src="img/library.svg" alt="Your Library">
+                        <h4 class="fw-1 pointer">Your Library</h4>
+                    </div>
+                    <div class="plus-img pointer">
+                        <img width="17px" class="invert" src="img/plus.svg" alt="plus">
+                    </div>
+                </div>
+                <div class="songList">
+                    <!-- Cards will be populated here -->
+                </div>
+                <div class="lib-bt-play">
+                    <div class="lib-bt">
+                        <p class="text">Create your playlist
+                        <p>
+                        <p class="text-1">It’s easy, we’ll help you</p>
+                        <button class="bt-4">
+                            <p>Create playlist</p>
+                        </button>
+                    </div>
+                    <div class="lib-bt">
+                        <p class="text">Let's find some podcasts to follow</p>
+                        <p class="text-1">We'll keep you updated on new episodes</p>
+                        <button class="bt-4">
+                            <p>Browse podcasts</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="foot-s">
+                    <div class="footer">
+                        <div class="flex">
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/legal/" class="">
+                                    <span>Legal</span>
+                                </a>
+                            </div>
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/privacy/" class="">
+                                    <span>Privacy Center</span>
+                                </a>
+                            </div>
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/legal/privacy-policy/" class="">
+                                    <span>Privacy Policy</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/legal/cookies-policy/" class="">
+                                    <span>Cookies</span>
+                                </a>
+                            </div>
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/legal/privacy-policy/#s3" class="">
+                                    <span>About Ads</span>
+                                </a>
+                            </div>
+                            <div class="m-1">
+                                <a href="https://www.spotify.com/us/accessibility/" class="">
+                                    <span>Accessibility</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-1">
+                            <a href="https://www.spotify.com/us/legal/notice-at-collection/" class="">
+                                <span>Notice at Collection</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="bg-grey bt-1">
+                            <img id="lang" width="17px" class="invert" src="img/button.svg" alt="english">
+                            <span>English</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded">
+            <div class="header bg-head">
+                <div class="nav">
+                    <svg class="hamburger" width="27" height="27" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 5L20 5" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 12L20 12" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M4 19L20 19" stroke="#A7A7A7" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <svg class="SVG" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#a7a7a7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="SVG" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#a7a7a7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="buttons">
+                    <button class="bt-2">Sign up</button>
+                    <button class="bt-3">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <p>Spotify Playlists</p>
+                <div class="cardContainer">
+                    <!-- Cards will be populated here -->
+                </div>
+            </div>
+            <div class="playbar bg-grey">
+                <div id="seekbar" class="seekbar">
+                    <div class="circle">
+                    </div>
+                </div>
+                <div class="songInfo"></div>
+                <div class="songButtons">
+                    <img id="previous" width="26" class="invert" src="img/previous.svg" alt="previous">
+                    <div class="play2">
+                        <img id="play" width="29" class="invert" src="img/play2.svg" alt="play">
+                    </div>
+                    <img id="next" width="26" class="invert" src="img/next.svg" alt="next">
+                </div>
+                <div class="TimeVol">
+                    <div class="songTime"></div>
+                    <div class="volume">
+                        <img id="vol" class="invert" src="img/volume1.svg" alt="volume">
+                        <div class="range">
+                            <input type="range" name="volume">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</body>
+
+</html>
