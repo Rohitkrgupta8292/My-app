@@ -1,0 +1,799 @@
+<!doctype html>
+<html>
+
+<head class="::-webkit">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/ X</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link href="./css/output.css" rel="stylesheet">
+    <style>
+        /* Custom Scrollbar Styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #4f4f4f;
+            /* Customize scrollbar thumb color */
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #121212;
+            /* Customize scrollbar track color */
+        }
+
+        .third::-webkit-scrollbar {
+            width: 0;
+            /* WebKit browsers */
+        }
+
+        .scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        @media (max-width: 920px) {
+            .container {
+                max-width: 920px;
+            }
+        }
+
+        @media (min-width: 531px) {
+            .hide {
+                display: none;
+            }
+        }
+
+        .scroll-down{
+            opacity: 0.3;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+
+<body class="bg-black text-white m-0 p-0">
+    <div class="flex meesm:flex-col container mx-auto relative">
+        <div
+            class="first w-[55%] max-h-screen mesm:ml-[5px] sticky top-0 mxl:w-[20%] meesm:hidden mxl:ml-[55px] mlg:ml-[30px] tallxl:ml-[5px]">
+            <div class="logo my-3">
+                <img src="img/x.svg" alt="twitter" class="w-[26px] ml-[23px] mb-[9px]  mlg:w-[30px]">
+            </div>
+            <div class="sidebar flex flex-col justify-end w-[75%] m-auto">
+                <ul
+                    class="flex flex-col text-max-xl space-y-0. 5 tallxl:space-y-2 mlg:space-y-3 mlg:mb-[30px] w-[85%] mr-4 mb-3 mlg:mt-[15px]">
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px] w-fit mesm:w-[100%]  pr-[30px] mxl:px-[13px] py-[8px] mlg:py-[12px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-full hover:cursor-pointer font-bold">
+                        <img src="img/home.svg" alt="Home" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Home</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/search.svg" alt="" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Explore</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img class="w-6 tallxl:w-10" src="img/notification.svg" alt="notification"><span
+                            class="block mxl:hidden">Notifications</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/message.svg" alt="message" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Messages</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/grok.svg" alt="Grok" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Grok</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/list.svg" alt="List" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Lists</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  talllg:block  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer hidden mlg:py-[12px]">
+                        <img src="img/bookmark.svg" alt="Bookmarks" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Bookmarks</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  talllg:block  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer hidden mlg:py-[12px]">
+                        <img src="img/community.svg" alt="" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Communities</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/x.svg" alt="X Premium" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">Premium</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/profile.svg" alt="profile" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">profile</span>
+                    </li>
+                    <li
+                        class="tallxl:w-[52px] tallxl:h-[52px]  mxl:px-[13px] w-fit pr-[30px] py-[8px] pl-[12px] flex justify-start gap-4 hover:bg-[#202327] hover:border-spacing-0 hover:rounded-[25px] hover:cursor-pointer mlg:py-[12px]">
+                        <img src="img/more.svg" alt="More" class="w-6 tallxl:w-10"><span
+                            class="block mxl:hidden">More</span>
+                    </li>
+                </ul>
+                <div>
+                    <button
+                        class="bg-[#1D9BF0]  hover:bg-[#1A8CD8] rounded-full py-2 px-[85px] font-bold block mxl:hidden">Post</button>
+                    <div class="bg-[#1D9BF0] p-4  hover:bg-[#1A8CD8] rounded-full w-fit hidden mxl:block"><img
+                            width="24px" class="rounded-full" src="img/post.svg" alt="post"></div>
+                </div>
+            </div>
+            <div>
+                <div
+                    class="block mxl:hidden flex justify-between items-center p-2 bottom-[15px] m-[-0.5rem] hover:bg-[#1D1F23] hover:cursor-pointer rounded-full absolute w-[90%] left-[27px]">
+                    <img width="40px" src="img/modi.png" class="rounded-full" alt="Narenda Modi">
+                    <div>
+                        <h1 class="font-bold  text-[15px]">Narendra Modi</h1>
+                        <h1 class="text-[#71767b] text-[14px]">@NarendraModi</h1>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24" aria-hidden="true"
+                        class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                        <g>
+                            <path
+                                d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+                <div
+                    class="hidden mxl:block p-3 bottom-[15px] m-[-0.5rem] hover:bg-[#1D1F23] hover:cursor-pointer rounded-full absolute w-fit left-[27px] mxl:left-[5px]">
+                    <img width="50px" src="img/modi.png" class="rounded-full" alt="Narenda Modi">
+                </div>
+            </div>
+        </div>
+        <div class="hide first-M flex h-[60px] justify-between items-center bg-black my-[15px] ml-[20px] w-[122%] mmm:w-[165%]">
+            <div class="p-[8px] hover:bg-[#5a85da] hover:cursor-pointer rounded-full w-fit]">
+                <img width="50px" src="img/modi.png" class="rounded-full" alt="Narenda Modi">
+            </div>
+            <div class="logo">
+                <img src="img/x.svg" alt="twitter" class="w-[35px]">
+            </div>
+            <div class="setting w-[3.25rem] p-[9px]  rounded-full hover:bg-[#181818] hover:cursor-pointer">
+                <img src="img/setting.svg" alt="Settings" />
+            </div>
+        </div>
+        <div
+            class="opac first-icons flex hide bg-black fixed bottom-[-1px] py-[9px] px-[22px] w-full justify-between">
+            <div class="M-icon rounded-full py-3 px-3 hover:bg-[#202327]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="rgb(231 233 234)"
+                    class="w-[37px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path
+                            d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="M-icon rounded-full py-3 px-3 hover:bg-[#202327]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="rgb(231 233 234)"
+                    class="w-[37px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path
+                            d="M10.25 3.75c-3.59 0-6.5 2.91-6.5 6.5s2.91 6.5 6.5 6.5c1.795 0 3.419-.726 4.596-1.904 1.178-1.177 1.904-2.801 1.904-4.596 0-3.59-2.91-6.5-6.5-6.5zm-8.5 6.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5c0 1.986-.682 3.815-1.824 5.262l4.781 4.781-1.414 1.414-4.781-4.781c-1.447 1.142-3.276 1.824-5.262 1.824-4.694 0-8.5-3.806-8.5-8.5z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="M-icon rounded-full py-3 px-3 hover:bg-[#202327]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="rgb(231 233 234)"
+                    class="w-[37px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <g clip-path="url(#17-clip0_2592_269)" clip-rule="evenodd">
+                            <path
+                                d="M4.2 4.2v15.6h15.6V4.2H4.2zM3 2h18c.552 0 1 .448 1 1v18c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V3c0-.552.448-1 1-1z">
+                            </path>
+                            <path d="M6.68 17.8l8.108-11.58h2.532L9.21 17.8H6.68z"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="17-clip0_2592_269">
+                                <rect height="20" rx="1" width="20" x="2" y="2"></rect>
+                            </clipPath>
+                        </defs>
+                    </g>
+                </svg>
+            </div>
+            <div class="M-icon rounded-full py-3 px-3 hover:bg-[#202327]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="rgb(231 233 234)"
+                    class="w-[37px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path
+                            d="M19.993 9.042C19.48 5.017 16.054 2 11.996 2s-7.49 3.021-7.999 7.051L2.866 18H7.1c.463 2.282 2.481 4 4.9 4s4.437-1.718 4.9-4h4.236l-1.143-8.958zM12 20c-1.306 0-2.417-.835-2.829-2h5.658c-.412 1.165-1.523 2-2.829 2zm-6.866-4l.847-6.698C6.364 6.272 8.941 4 11.996 4s5.627 2.268 6.013 5.295L18.864 16H5.134z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="M-icon rounded-full py-3 px-3 hover:bg-[#202327]">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" fill="rgb(231 233 234)"
+                    class="w-[37px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                    <g>
+                        <path
+                            d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        <div
+            class="opac post-bt hide bg-[#1D9BF0] p-6  hover:bg-[#1A8CD8] rounded-full w-fit fixed bottom-[105px] right-[30px]">
+            <img width="35px" class="rounded-full" src="img/post.svg" alt="post">
+        </div>
+        <div class="second w-[130%] meesm:w-[140%] border-x-[1px] border-x-[#2F3336] mmm:w-fit">
+            <div
+                class="top flex justify-between meesm:justify-around items-center text-[#676B70] text-xl sticky top-0 bg-black opacity-[0.8] brightness-125 mlg:justify-normal">
+                <div
+                    class="left w-1/2 mlg:w-[40%] meesm:mb-[10px] meesm:mt-[20px] flex justify-center py-2 hover:bg-[#181818] hover:cursor-pointer font-bold text-white">
+                    <div class="relative">
+                        <span class="text-[15px] meesm:text-[20px]">For you</span>
+                        <div
+                            class="absolute w-[52px] meesm:w-[72px] h-1 bg-[#1D9BF0] bottom-[-8px] meesm:bottom-[-17px] left-[0] rounded-full">
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="right w-1/2 mlg:w-[40%] meesm:mb-[10px] meesm:mt-[20px] flex justify-center py-2 hover:bg-[#181818] hover:cursor-pointer">
+                    <span class="text-[15px] font-semibold meesm:text-[20px]">Following</span>
+                </div>
+                <div
+                    class="setting w-11 mlg:w-9 mx-2 p-[8px] meesm:hidden rounded-full hover:bg-[#181818] hover:cursor-pointer">
+                    <img src="img/setting.svg" alt="Settings" />
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-[#2F3336] sticky top-[45px] meesm:top-[74px]"></div>
+            <div class="whathapp flex mr-5 ml-5 mt-5 mb-2">
+                <div class="img">
+                    <img class="rounded-full w-[40px] cursor-pointer" src="img/modi.png" alt="modi">
+                </div>
+                <div class="w-[90%]">
+                    <textarea class="w-full bg-black text-white outline-none mx-2 resize-none overflow-hidden h-[50px]"
+                        type="text" placeholder="What is happening?!"></textarea>
+                    <div
+                        class="flex items-center gap-1 mx-2 cursor-pointer rounded-full hover:bg-[#031018] w-[165px] py-[3px] pl-[8px]">
+                        <img width="18px" src="img/globe.svg" alt="globe">
+                        <span class="text-[14px] text-[#1D9BF0] font-[700] ">Everyone can reply</span>
+                    </div>
+                    <div class="h-[0.8px] w-[100%] mt-3 bg-[#2F3336]"></div>
+                    <div class="flex items-center justify-between mt-[5px]">
+                        <div class="blueicon flex gap-2 my-1">
+                            <img width="32px" class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]"
+                                src="img/image.svg" alt="image">
+                            <img width="32px" class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]"
+                                src="img/gif.svg" alt="gif">
+                            <img width="32px" src="img/poll.svg" alt="poll"
+                                class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]">
+                            <img width="32px" src="img/emogi.svg" alt="emogi"
+                                class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]">
+                            <img width="32px" src="img/schedule.svg" alt="schedule"
+                                class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]">
+                            <img width="32px" src="img/location.svg" alt="location"
+                                class="cursor-pointer p-[8px] rounded-full hover:bg-[#031018]">
+                        </div>
+                        <div>
+                            <button
+                                class="bg-[#1D9BF0] hover:bg-[#1A8CD8]  rounded-full py-1 px-5 font-bold">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] w-full bg-[#2F3336]"></div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="flex justify-between items-center p-5 hover:cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <img width="40px" src="img/modi.png" class="rounded-full" alt="Narenda Modi">
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="font-bold  text-[16px] flex hover:underline">Narendra Modi
+                                            <img width="20px" src="img/verified.svg" alt="verified" class="ml-[2px]">
+                                        </div>
+                                        <h1 class="text-[#71767b] text-[16px]">@NarendraModi</h1>
+                                        <div class="mt-[-9px] text-[#71767b] text-[20px]">
+                                            <span>.</span>
+                                        </div>
+                                        <div class="time text-[#71767b] text-[14px]">Feb 4</div>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                            class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Mitro, Sab Changa si Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Praesentium non pariatur recusandae?.</span>
+                                    <span class="text-[#3c9cd0] hover:underline">#BJP</span>
+                                    <div class="postContent mt-4 mb-1 w-[400px]">
+                                        <img class="rounded-[15px]" src="img/narendra.jpeg" alt="NarendraModi">
+                                    </div>
+                                    <div class="icons flex gap-[40px]">
+                                        <div
+                                            class="icon flex text-[#71767B] text-[14px] child:hover:text-[#1D9BF0] child-hover:fill-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class=" rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">33</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#00BA7C]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#00BA7C] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">198</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#DB1671]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#DB1671] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">12.2K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">1.1K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                aria-hidden="true" fill="#71767B"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                                                <g>
+                                                    <path
+                                                        d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-[#2F3336]"></div>
+                </div>
+                <div class="post">
+                    <div class="flex justify-between items-center p-5 hover:cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <img width="40px" src="img/ch-1.jpg" class="rounded-full" alt="Narenda Modi">
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="font-bold  text-[16px] flex hover:underline">Saara Adam
+                                            <img width="20px" src="img/verified.svg" alt="verified" class="ml-[2px]">
+                                        </div>
+                                        <h1 class="text-[#71767b] text-[16px]">@SaaraAdam21</h1>
+                                        <div class="mt-[-9px] text-[#71767b] text-[20px]">
+                                            <span>.</span>
+                                        </div>
+                                        <div class="time text-[#71767b] text-[14px]">Feb 4</div>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                            class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>Tomokazu sugita (gyomei's voice actor) said:
+                                        My mother called me and said, 'Tomokazu, you....character's
+                                        merchandise(gyomei)
+                                        is the only one has left unsold!. Why?
+                                        <br>
+                                        Sugita: It's because he's not active yet. gyomei will be active from now
+                                        on!</span>
+                                    <span class="text-[#3c9cd0] hover:underline">#saara</span>
+                                    <div class="postContent mt-4 mb-1 w-[400px]">
+                                        <img class="rounded-[15px]" src="img/ph-1.jpeg" alt="SaaraAdam21">
+                                    </div>
+                                    <div class="icons flex gap-[40px]">
+                                        <div
+                                            class="icon flex text-[#71767B] text-[14px] child:hover:text-[#1D9BF0] child-hover:fill-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class=" rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">33</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#00BA7C]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#00BA7C] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">198</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#DB1671]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#DB1671] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">12.2K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">1.1K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                aria-hidden="true" fill="#71767B"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                                                <g>
+                                                    <path
+                                                        d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-[#2F3336]"></div>
+                </div>
+                <div class="post">
+                    <div class="flex justify-between items-center p-5 hover:cursor-pointer">
+                        <div class="flex items-start gap-3">
+                            <img width="40px" src="img/ch-2.jpg" class="rounded-full" alt="Narenda Modi">
+                            <div class="flex flex-col">
+                                <div class="flex gap-2 items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <div class="font-bold  text-[16px] flex hover:underline">Demon Slayer
+                                            <img width="20px" src="img/verified.svg" alt="verified" class="ml-[2px]">
+                                        </div>
+                                        <h1 class="text-[#71767b] text-[16px]">@KimetsuDaily</h1>
+                                        <div class="mt-[-9px] text-[#71767b] text-[20px]">
+                                            <span>.</span>
+                                        </div>
+                                        <div class="time text-[#71767b] text-[14px]">Feb 4</div>
+                                    </div>
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                            aria-hidden="true"
+                                            class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                            <g>
+                                                <path
+                                                    d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div>
+                                    <span>DEMON SLAYER HASHIRA TRAINING MOVIE IS A MASTERPIECE</span>
+                                    <span class="text-[#3c9cd0] hover:underline">#DemonSlayer</span>
+                                    <div class="postContent mt-4 mb-1 w-[400px]">
+                                        <img class="rounded-[15px]" src="img/ph-2.jpeg" alt="Demon Slayer">
+                                    </div>
+                                    <div class="icons flex gap-[40px]">
+                                        <div
+                                            class="icon flex text-[#71767B] text-[14px] child:hover:text-[#1D9BF0] child-hover:fill-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class=" rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">33</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#00BA7C]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#00BA7C] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">198</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#DB1671]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#DB1671] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">12.2K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <span class="py-2">1.1K</span>
+                                        </div>
+                                        <div class="icon flex text-[#71767B] text-[14px] hover:text-[#1D9BF0]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                aria-hidden="true" fill="#71767B"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1nao33i r-lwhw9o r-cnnz9e">
+                                                <g>
+                                                    <path
+                                                        d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                                aria-hidden="true"
+                                                class="hover:fill-[#1D9BF0] rounded-full w-[28px] hover:bg-[#0A171F] px-[5px] py-[5px]  r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                                <g>
+                                                    <path
+                                                        d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z">
+                                                    </path>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-[#2F3336]"></div>
+                </div>
+            </div>
+        </div>
+        <div class="third w-[100%] tallxl:w-[85%] max-h-screen sticky top-0 overflow-x-auto mlg:hidden">
+            <div class="flex flex-col">
+                <div class="search text-[#757575]  border-black sticky top-0 h-[55px] bg-black pt-[5px]">
+                    <input type="search" placeholder="Search"
+                        class="w-[75%] tallxl:w-[90%] p-[8px] ml-[18px] rounded-full bg-[#202327] outline-none focus:outline-[#1D9BF0]">
+                </div>
+                <div class="p-5 w-[75%] tallxl:w-[90%] rounded-[18px] bg-[#16181C] m-[18px]">
+                    <h1 class="font-bold text-max-xl">Subscribe to Premium</h1>
+                    <p>Subscribe to unlock new features and if</p>
+                    <p></p> eligible,receive a share of ads revenue</p>
+                    <button
+                        class="bg-[#1D9BF0] hover:bg-[#1A8CD8] rounded-full py-[8px] px-[18px] my-[8px] font-bold text-xl">Subscribe</button>
+                </div>
+
+                <div class="w-[75%] tallxl:w-[90%] rounded-[18px] bg-[#16181C] m-[18px]">
+                    <h1 class="font-bold text-max-xl p-5">What's Happening</h1>
+                    <div class="px-6 py-2 item hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <div class="first-line flex justify-between items-center text-[#71767b] text-md">
+                            <p>Business & finance</p>
+                            <!-- <img src="img/dot.svg" alt="dot" class="rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px]"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                <g>
+                                    <path
+                                        d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-max-xl font-bold">Rs 1</h1>
+                        <h1 class="text-[#71767b] text-sm">1778 posts</h1>
+                    </div>
+                    <div class="px-6 py-2 item hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <div class="first-line flex justify-between items-center text-[#71767b] text-md">
+                            <p>Trending in India</p>
+                            <!-- <img src="img/dot.svg" alt="dot" class="w-8 h-8"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                <g>
+                                    <path
+                                        d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-max-xl font-bold">#Income Tax</h1>
+                        <h1 class="text-[#71767b] text-sm">13.5K posts</h1>
+                    </div>
+                    <div class="px-6 py-2 item hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <div class="first-line flex justify-between items-center text-[#71767b] text-md">
+                            <p>Trending in India</p>
+                            <!-- <img src="img/dot.svg" alt="dot" class="w-8 h-8"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                <g>
+                                    <path
+                                        d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-max-xl font-bold">Messi</h1>
+                        <h1 class="text-[#71767b] text-sm">142K posts</h1>
+                    </div>
+                    <div class="px-6 py-2 item hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <div class="first-line flex justify-between items-center text-[#71767b] text-md">
+                            <p>Entertainment . Trending</p>
+                            <!-- <img src="img/dot.svg" alt="dot" class="w-8 h-8"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                <g>
+                                    <path
+                                        d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-max-xl font-bold">#SquidGame2</h1>
+                        <h1 class="text-[#71767b] text-sm">3546 posts</h1>
+                    </div>
+                    <div class="px-6 py-2 item hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <div class="first-line flex justify-between items-center text-[#71767b] text-md">
+                            <p>News . Trending</p>
+                            <!-- <img src="img/dot.svg" alt="dot" class="w-8 h-8"> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#71767B" viewBox="0 0 24 24"
+                                aria-hidden="true"
+                                class="hover:fill-[#1D9BF0] rounded-full hover:bg-[#1D2C37]  w-9 h-9 py-[8px] px-[8px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-1xvli5t r-1hdv0qi">
+                                <g>
+                                    <path
+                                        d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                        <h1 class="text-max-xl font-bold">#GyanvapiMandir</h1>
+                        <h1 class="text-[#71767b] text-sm">35.9K posts</h1>
+                    </div>
+                </div>
+
+                <div class="follow w-[75%] tallxl:w-[90%] rounded-[18px] bg-[#16181C] m-[18px]">
+                    <h1 class="font-bold text-max-xl: p-5">Who to follow</h1>
+                    <div class="flex justify-between items-center p-4 hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <img width="60px" src="img/Ami.jpg" class="rounded-full" alt="AmiAmi English">
+                        <div>
+                            <h1 class="font-bold ">AmiAmi English</h1>
+                            <h1 class="text-[#71767b] text-sm">@AmiAmi_English</h1>
+                        </div>
+                        <button
+                            class="rounded-full bg-white text-black font-bold py-2 px-5 hover:bg-[#9da5a7]">Follow</button>
+                    </div>
+                    <div class="flex justify-between items-center p-4 hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <img width="60px" src="img/modi.png" class="rounded-full" alt="AmiAmi English">
+                        <div>
+                            <h1 class="font-bold ">PMO India</h1>
+                            <h1 class="text-[#71767b] text-sm">@PMOIndia</h1>
+                        </div>
+                        <button
+                            class="rounded-full bg-white text-black font-bold py-2 px-5 hover:bg-[#9da5a7]">Follow</button>
+                    </div>
+                    <div class="flex justify-between items-center p-4 hover:bg-[#1D1F23] hover:cursor-pointer">
+                        <img width="60px" src="img/virat.jpg" class="rounded-full" alt="AmiAmi English">
+                        <div>
+                            <h1 class="font-bold ">Virat Kohli</h1>
+                            <h1 class="text-[#71767b] text-sm">@imVKohli</h1>
+                        </div>
+                        <button
+                            class="rounded-full bg-white text-black font-bold py-2 px-5 hover:bg-[#9da5a7]">Follow</button>
+                    </div>
+                </div>
+                <div class="footer text-[#54595D] text-[13px] mb-[30px] tallxl:mr-[40px]">
+                    <ul class="flex gap-2 ml-7">
+                        <li class="hover:underline"><a href="#">Terms of Service</a></li>
+                        <li class="hover:underline"><a href="#">Privacy Policy</a></li>
+                        <li class="hover:underline"><a href="#">Cookie Policy</a></li>
+                    </ul>
+                    <ul class="flex gap-2 ml-7">
+                        <li class="hover:underline"><a href="#">Accessibility</a></li>
+                        <li class="hover:underline"><a href="#">Ads info</a></li>
+                        <li class="hover:underline"><a href="#">More...</a></li>
+                        <li class="hover:underline"><a href="#">&copy 2024 X corp.</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+       let lastScrollTop = 0;
+
+        window.addEventListener('scroll', function () {
+           let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+           let opac = document.getElementsByClassName("opac");
+
+            if (currentScroll > lastScrollTop) {
+                // Scrolling down
+                opac[0].classList.add("scroll-down")
+                opac[1].classList.add("scroll-down")
+            } else {
+                // Scrolling up
+                opac[0].classList.remove("scroll-down")
+                opac[1].classList.remove("scroll-down")
+            }
+
+            lastScrollTop = currentScroll;
+        });
+    </script>
+</body>
+</html>
